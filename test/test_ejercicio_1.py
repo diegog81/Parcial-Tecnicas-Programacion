@@ -28,7 +28,7 @@ class EjercicioTest(unittest.TestCase):
 
         self.assertEqual(resultado,['a'])
 
-    def testRotacionesSiRecibeUnaPalabraDeberiaDevolverPalabraEnOrdenInverso(self):
+    def testRotacionesSiRecibeUnaPalabraConDosLetrasDeberiaDevolverDosPalabrasEnOrdenInverso(self):
 
         palabra = "ab"
 
@@ -36,7 +36,7 @@ class EjercicioTest(unittest.TestCase):
 
         self.assertEqual(resultado,['ab','ba'])
 
-    def testRotacionesSiRecibeUnaPalabraPazDeberiaDevolverPalabraEnOrdenInverso(self):
+    def testRotacionesSiRecibeUnaPalabraConTresLetrasDeberiaDevolverTresPalabrasEnOrdenInverso(self):
 
         palabra = "paz"
 
@@ -44,7 +44,7 @@ class EjercicioTest(unittest.TestCase):
 
         self.assertEqual(resultado,['paz','azp','zpa'])
 
-    def testRotacionesSiRecibeUnaPalabraSolDeberiaDevolverPalabraEnOrdenInverso(self):
+    def testRotacionesSiRecibeUnaPalabraConLetrasYUnEspacioDeberiaDevolverCuatroPalabrasConUnEspacioEnOrdenInverso(self):
 
         palabra = "so l"
 
@@ -52,7 +52,7 @@ class EjercicioTest(unittest.TestCase):
 
         self.assertEqual(resultado,['so l','o ls',' lso','lso '])
 
-    def testRotacionesSiRecibeUnaPalabraRotarDeberiaDevolverPalabraEnOrdenInverso(self):
+    def testRotacionesSiRecibeUnaPalabraConCincoLetrasDeberiaDevolverCincoPalabrasEnOrdenInverso(self):
 
         palabra = "rotar"
 
