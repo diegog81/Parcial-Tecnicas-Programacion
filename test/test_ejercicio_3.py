@@ -2,7 +2,7 @@ import ejercicio_3
 import unittest
 
 class EjercicioTest(unittest.TestCase):
-    def testResultadoDelGanadorSiRecibeUnaListaVaciaDeberiaDevolverVacio(self):
+    def testResultadoDelGanadorSiRecibeUnaListaVaciaDeberiaDevolverEquipoVacio(self):
 
         tupla = []
 
@@ -11,7 +11,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, "")
 
 
-    def testResultadoDelGanadorSiRecibeUnaListaConUnaTuplaDeEquiposDeberiaDevolverEquipoConMayoresGoles(self):
+    def testResultadoDelGanadorSiRecibeUnaListaDeEquiposConUnResultadoDeberiaDevolverEquipoConMayoresGoles(self):
 
         tupla = [("a", 1, "b", 0)]
 
@@ -20,7 +20,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, "a")
 
 
-    def testResultadoDelGanadorSiRecibeUnaListaConTresTuplasDeEquiposDeberiaDevolverEquipoConMayorPuntaje(self):
+    def testResultadoDelGanadorSiRecibeUnaListaDeEquiposConTresResultadosDeberiaDevolverEquipoConMayorPuntaje(self):
 
         tupla = [("a", 1, "b", 0), ("a", 1, "c", 2), ("c", 3, "b", 0)]
 
@@ -29,7 +29,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, "c")
 
 
-    def testResultadoDelGanadorSiRecibeUnaListaConTresTuplasDeEquiposConPuntosEmpatadosDeberiaDevolverElPrimeroEnOrdenAlfabetico(self):
+    def testResultadoDelGanadorSiRecibeUnaListaDeEquiposConPuntosEmpatadosDeberiaDevolverElPrimeroEnOrdenAlfabetico(self):
 
         tupla = [("Boca", 1, "Belgrano", 1), ("Boca", 1, "Almagro", 1), ("Almagro", 1, "Belgrano", 1)]
 
@@ -38,7 +38,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, "Almagro")
 
 
-    def testResultadoDelGanadorSiRecibeUnaListaConCuatroTuplasDeEquiposDeberiaDevolverEquipoConMayorPuntaje(self):
+    def testResultadoDelGanadorSiRecibeUnaListaDeEquiposConCuatroResultadosDeberiaDevolverEquipoConMayorPuntaje(self):
 
         tupla = [("a", 1, "b", -2), ("a", 1, "c", 1), ("c", 1, "b", 1), ("d", 1, "a", 9)]
 
