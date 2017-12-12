@@ -43,7 +43,7 @@ class Ejercicio2Test(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testUnMapaConCadenaDeDistintosLongitudesDeberiaDevolverListaVacia(self):
+    def testUnMapaConCadenaDeDistintasLongitudesDeberiaDevolverListaVacia(self):
 
         posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
         mapa = ["b.b.","....","..bb","b.b"]
