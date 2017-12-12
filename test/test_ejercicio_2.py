@@ -1,7 +1,7 @@
 import ejercicio_2
 import unittest
 
-class EjercicioTest(unittest.TestCase):
+class Ejercicio2Test(unittest.TestCase):
 
     def testUnMapaVacioDeberiaDevolverUnaListaVacia(self):
 
@@ -11,16 +11,6 @@ class EjercicioTest(unittest.TestCase):
         resultado = ejercicio_2.botesNoHundidos(mapa, posicionesDeDisparosDePrueba)
 
         self.assertEqual(resultado,[])
-
-
-    def testUnMapaVacioDeberiaDevolverListaVacia(self):
-
-        posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
-        mapa = []
-
-        resultado = ejercicio_2.botesNoHundidos(mapa, posicionesDeDisparosDePrueba)
-
-        self.assertEqual(resultado, [])
 
 
     def testUnMapaConEspaciosEnBlancoDeberiaDevolverListaVacia(self):
@@ -33,7 +23,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testUnMapaConUnStringDeberiaDevolverListaVacia(self):
+    def testUnMapaInvalidoDeberiaDevolverListaVacia(self):
 
         posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
         mapa = ["soy NO valido"]
@@ -43,7 +33,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testUnMapaConUnaCadenaDeCaracteresDeberiaDevolverListaVacia(self):
+    def testOtroMapaInvalidoDeberiaDevolverListaVacia(self):
 
         posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
         mapa = ["yo","tambien","soy","invalido"]
@@ -53,7 +43,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testUnMapaConCadenaDeDistintosLenDeberiaDevolverListaVacia(self):
+    def testUnMapaConCadenaDeDistintosLongitudesDeberiaDevolverListaVacia(self):
 
         posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
         mapa = ["b.b.","....","..bb","b.b"]
@@ -63,7 +53,7 @@ class EjercicioTest(unittest.TestCase):
         self.assertEqual(resultado, [])
 
 
-    def testUnMapaConListaDeCadenasDeberiaDevolverPosicionesDeBarcosNoHundidos(self):
+    def testUnMapaValidoDeberiaDevolverPosicionesDeBarcosNoHundidos(self):
 
         posicionesDeDisparosDePrueba = [(1, 1), (3, 4), (1, 3), (4, 5)]
         mapa = ["b.b..","b...b",".....","....b"]

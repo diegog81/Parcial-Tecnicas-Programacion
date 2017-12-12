@@ -49,7 +49,7 @@ def empaquetaLista(lista):
     return equipo
 
 
-def resultadoDelGanador(tupla):
+def ganadorDelCampeonato(tupla):
     if tupla == []:
         return ""
     lista = empaquetaTupla(tupla)
