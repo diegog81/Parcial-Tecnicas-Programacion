@@ -36,7 +36,7 @@ class Ejercicio1Test(unittest.TestCase):
 
         self.assertEqual(resultado,['ab','ba'])
 
-    def testRotacionesSiRecibeUnaPalabraConTresLetrasDeberiaDevolverTresPalabrasEnOrdenInverso(self):
+    def testRotacionesSiRecibeUnaPalabraConTresLetrasDeberiaDevolverTresPalabrasRotadas(self):
 
         palabra = "paz"
 
